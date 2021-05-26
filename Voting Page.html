@@ -42,6 +42,34 @@
       <div class="stats">
         <!-- vote creation rendered from JavaScript -->
       </div>
+      
+      <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+  <!-- FirebaseUI Auth -->
+  <!-- https://firebaseopensource.com/projects/firebase/firebaseui-web/ -->
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyA6VXUtrvB96BEZmJiyr9IlX-fKLNDZx_Q",
+    authDomain: "kiei-451-17cd5.firebaseapp.com",
+    projectId: "kiei-451-17cd5",
+    storageBucket: "kiei-451-17cd5.appspot.com",
+    messagingSenderId: "3344532057",
+    appId: "1:3344532057:web:18a419a32ba7313f182748"
+  } // replace
     
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
       <script src="votingpage1.js"></script>
     </div> 
