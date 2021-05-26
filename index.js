@@ -21,29 +21,29 @@ firebase.auth().onAuthStateChanged(async function(user) {
    document.location.href = `Voting Page.html`
   })
 
-  // get a reference to the "Vote" button
-  let postButton = document.querySelector(`#vote-button`)
+  // // get a reference to the "Vote" button
+  // let postButton = document.querySelector(`#vote-button`)
 
-  // handle the clicking of the "Vote" button
-  postButton.addEventListener(`click`, async function(event) {
-    // prevent the default behavior (submitting the form)
-    event.preventDefault()
+  // // handle the clicking of the "Vote" button
+  // postButton.addEventListener(`click`, async function(event) {
+  //   // prevent the default behavior (submitting the form)
+  //   event.preventDefault()
 
-    // get a reference to the input holding the vote URL
-    let voteUrlInput = document.querySelector(`#vote-url`)
+  //   // get a reference to the input holding the vote URL
+  //   let voteUrlInput = document.querySelector(`#vote-url`)
 
-    // store the user-inputted vote URL in memory
-    let voteUrl = voteUrlInput.value
+  //   // store the user-inputted vote URL in memory
+  //   let voteUrl = voteUrlInput.value
 
-    // create the URL for our "create post" lambda function
-    let url = `/.netlify/functions/create_vote?userName=${user.displayName}&voteUrl=${voteUrl}`
+  //   // create the URL for our "create post" lambda function
+  //   let url = `/.netlify/functions/create_vote?userName=${user.displayName}&voteUrl=${voteUrl}`
 
-    // fetch the URL, wait for the response, store the response in memory
-    let response = await fetch(url)
+  //   // fetch the URL, wait for the response, store the response in memory
+  //   let response = await fetch(url)
 
-    // refresh the page
-    location.reload()
-  })
+  //   // refresh the page
+  //   location.reload()
+  // })
  } else {
     // Signed out
     console.log('signed out')

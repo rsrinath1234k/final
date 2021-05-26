@@ -52,6 +52,11 @@ window.addEventListener('DOMContentLoaded', async function() {
       `)
     }
 
+
+    
+    })
+
+   
     // // get a reference to the "Vote" button
     // let postButton = document.querySelector(`#vote-button`)
 
@@ -76,7 +81,3 @@ window.addEventListener('DOMContentLoaded', async function() {
     //   // refresh the page
     //   location.reload()
     // })
-    
-    })
-
-   
