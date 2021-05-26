@@ -15,6 +15,8 @@ exports.handler = async function(event) {
   // retrieve the documents from the query
   let bios = biosQuery.docs
 
+  console.log(bios)
+
   // loop through the post documents
   for (let bioIndex=0; bioIndex < bios.length; bioIndex++) {
     // get the id from the document
