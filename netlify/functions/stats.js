@@ -33,7 +33,8 @@ exports.handler = async function(event) {
       pointsPerGame: statData.pointsPerGame,
       reboundsPerGame: statData.reboundsPerGame,
       assistsPerGame: statData.assistsPerGame,
-      playerImpactEstimate: statData.playerImpactEstimate
+      playerImpactEstimate: statData.playerImpactEstimate,
+      votingNumber: statData.votingNumber
     }
     // add the Object to the return value
     returnValue.push(statObject)
