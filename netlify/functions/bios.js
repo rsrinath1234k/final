@@ -10,30 +10,30 @@ exports.handler = async function(event) {
   let db = firebase.firestore()
 
   // perform a query against firestore for all posts, wait for it to return, store in memory
-  let bioQuery = await db.collection(`Player Bio`).get()
+  let biosQuery = await db.collection(`bio`).get()
 
   // retrieve the documents from the query
-  let playerBio = bioQuery.docs
+  let bios = biosQuery.docs
 
   // loop through the post documents
-  for (let playerBioIndex=0; playerBioIndex < playerBio.length; playerBioIndex++) {
+  for (let bioIndex=0; bioIndex < bios.length; bioIndex++) {
     // get the id from the document
-    let bioId = playerBio[playerBioIndex].id
+    let bioId = bios[bioIndex].id
 
     // get the data from the document
-    let bioData = playerBio[playerBioIndex].data()
+    let bioData = bios[bioIndex].data()
 
     // create an Object to be added to the return value of our lambda
     let bioObject = {
       id: bioId,
-      playerName: bioData.imageUrl,
+      playerName: bioData.playerName,
       imageUrl: bioData.imageUrl,
       team: bioData.team,
       university: bioData.university,
       age: bioData.age,
       experience: bioData.experience,
       height: bioData.height,
-      weight: bioData.weight,
+      weight: bioData.weight
     }
     // add the Object to the return value
     returnValue.push(bioObject)
