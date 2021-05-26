@@ -1,3 +1,5 @@
+//purpose of this page: this page collects player bios from our firebase collection. 
+
 // allows us to use firebase
 let firebase = require(`./firebase`)
 

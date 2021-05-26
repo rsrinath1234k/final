@@ -1,3 +1,5 @@
+//purpose of this page: this page feeds player stats to the voting page html. 
+
 // standard event listener for Firebase auth... use instead of DOMContentLoaded
 window.addEventListener('DOMContentLoaded', async function() {
 

@@ -1,3 +1,5 @@
+//purpose of this page: this page contains the code for the user athentication process. 
+
 firebase.auth().onAuthStateChanged(async function(user) {
   if (user) {
     // Signed in
