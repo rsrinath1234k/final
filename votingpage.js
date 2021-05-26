@@ -33,14 +33,12 @@ window.addEventListener('DOMContentLoaded', async function() {
 
                   <ol class ="m-auto text-center" >
                       <li class="m-auto text-left font-medium underline text-6xl text-red-700"><strong>${stat.playerName}</strong></li>
-                      <li class="m-auto text-left text-white text-2xl">_</li>
-
+                      <li class="m-auto text-left text-white text-2xl">_</li> <!--this is essentially acting as white space-->
                       <li class="m-auto text-left text-red-600 text-2xl">Points Per Game: ${stat.pointsPerGame}</li>
                       <li class="m-auto text-left text-red-600 text-2xl">Rebounds Per Game: ${stat.reboundsPerGame}</li>
                       <li class="m-auto text-left text-red-600 text-2xl">Assists Per Gamee: ${stat.assistsPerGame} </li>
                       <li class="m-auto text-left text-red-600 text-2xl">Player Impact Estimate: ${stat.playerImpactEstimate}</li>
-                      <li class="m-auto text-left text-white text-2xl">_</li>
-
+                      <li class="m-auto text-left text-white text-2xl">_</li> <!--this is essentially acting as white space-->
                       <li class="border-4 m-auto text-left text-red-600 text-2xl"><strong><em>Vote "${stat.votingNumber}" to cast your vote for ${stat.playerName}!</strong></em></li>
 
                       

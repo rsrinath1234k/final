@@ -33,6 +33,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 
                     <ol class ="m-auto text-center" >
                         <li class="m-auto text-center font-medium underline text-6xl text-red-700"><strong>${bio.playerName}</strong></li>
+                        <li class="m-auto text-left text-white text-2xl">_</li> <!--this is essentially acting as white space-->
                         <li class="m-auto text-left text-red-600 text-2xl">Current Team: ${bio.team}</li>
                         <li class="m-auto text-left text-red-600 text-2xl">University Team: ${bio.university}</li>
                         <li class="m-auto text-left text-red-600 text-2xl">Age: ${bio.age} </li>
