@@ -1,9 +1,10 @@
+//purpose of this page: this page contains the code for the user athentication process. 
+
 firebase.auth().onAuthStateChanged(async function(user) {
   if (user) {
     // Signed in
     console.log('signed in')
 
-                                                                    //added the code below in here to test
     // Build the markup for the sign-out button and set the HTML in the header
     document.querySelector(`.sign-in-or-sign-out`).innerHTML = `
       <button class="text-pink-500 underline sign-out">Sign Out</button>
@@ -16,9 +17,8 @@ firebase.auth().onAuthStateChanged(async function(user) {
    // sign out of firebase authentication
    firebase.auth().signOut()
 
-   // redirect to the home page
+   // redirect to the voting page
    document.location.href = `Voting Page.html`
-                                                                    //added the code above in here to test
 
 
   })

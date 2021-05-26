@@ -1,3 +1,5 @@
+//purpose of this page: this page collects player stats from our firebase collection. 
+
 // allows us to use firebase
 let firebase = require(`./firebase`)
 
@@ -33,7 +35,8 @@ exports.handler = async function(event) {
       pointsPerGame: statData.pointsPerGame,
       reboundsPerGame: statData.reboundsPerGame,
       assistsPerGame: statData.assistsPerGame,
-      playerImpactEstimate: statData.playerImpactEstimate
+      playerImpactEstimate: statData.playerImpactEstimate,
+      votingNumber: statData.votingNumber
     }
     // add the Object to the return value
     returnValue.push(statObject)
