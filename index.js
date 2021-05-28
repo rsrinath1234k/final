@@ -1,9 +1,10 @@
+//purpose of this page: this page contains the code for the user athentication process. 
+
 firebase.auth().onAuthStateChanged(async function(user) {
   if (user) {
     // Signed in
-    console.log('signed in')
+    console.log(user)
 
-                                                                    //added the code below in here to test
     // Build the markup for the sign-out button and set the HTML in the header
     document.querySelector(`.sign-in-or-sign-out`).innerHTML = `
       <button class="text-pink-500 underline sign-out">Sign Out</button>
@@ -16,12 +17,33 @@ firebase.auth().onAuthStateChanged(async function(user) {
    // sign out of firebase authentication
    firebase.auth().signOut()
 
-   // redirect to the home page
+   // redirect to the voting page
    document.location.href = `Voting Page.html`
-                                                                    //added the code above in here to test
-
-
   })
+
+  // // get a reference to the "Vote" button
+  // let postButton = document.querySelector(`#vote-button`)
+
+  // // handle the clicking of the "Vote" button
+  // postButton.addEventListener(`click`, async function(event) {
+  //   // prevent the default behavior (submitting the form)
+  //   event.preventDefault()
+
+  //   // get a reference to the input holding the vote URL
+  //   let voteUrlInput = document.querySelector(`#vote-url`)
+
+  //   // store the user-inputted vote URL in memory
+  //   let voteUrl = voteUrlInput.value
+
+  //   // create the URL for our "create post" lambda function
+  //   let url = `/.netlify/functions/create_vote?userName=${user.displayName}&voteUrl=${voteUrl}`
+
+  //   // fetch the URL, wait for the response, store the response in memory
+  //   let response = await fetch(url)
+
+  //   // refresh the page
+  //   location.reload()
+  // })
  } else {
     // Signed out
     console.log('signed out')
