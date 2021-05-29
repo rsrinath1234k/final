@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       // - Ignore the default behavior of the button
       event.preventDefault()
 
-      let url = `https://www.balldontlie.io/api/v1/teams/`
+      let url = `https://www.balldontlie.io/api/v1/teams`
         
         // - Fetch the url, wait for a response, store the response in memory
         let response = await fetch(url)
