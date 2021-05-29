@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', async function() {
   
-       let url = `https://www.balldontlie.io/api/v1/stats/29`
+       let url = `https://www.balldontlie.io/api/v1/players/237`
         
         // - Fetch the url, wait for a response, store the response in memory
         let response = await fetch(url)
@@ -20,6 +20,6 @@ window.addEventListener('DOMContentLoaded', async function() {
           // This will modify the inner contents of that current div
           currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">${json.first_name}, ${json.last_name} had ${json.pts} points, ${json.reb} rebounds, and ${json.ast} assists in last night's game!</div>
+            <div class="font-bold text-m">The current MVP favorite per Vegas odds is ${json.first_name} ${json.last_name}, who plays for the Los Angeles Lakers. Find out more on who should be MVP by logging in below!! </div>
           </div>`
         })

@@ -22,7 +22,7 @@
       <div class ="w-52 p-2 rounded-sm pb-0"><img src ="hoop.jpeg"></div>     
     </div>
 
-<h2 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8 text-blue-800">Current standings!</h2>
+<h2 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8 text-blue-800">Current MVP Favorite</h2>
 <div class ="text-center font-bold font-underline text-blue-800">
   <div class="text-center">
   </div>
@@ -30,22 +30,7 @@
 <div class="today mt-8 space-y-4">
 </div>
 
-<h3 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8 text-blue-800">Tryna hoop in the next week? Get the weather first!</h3>
-    <div class ="text-center font-bold font-underline text-blue-800">
-            <div class="text-center">
-          <form>
-            <input type="text" name="location" id="location" placeholder="Location" class="border border-gray-400 rounded p-2 mr-1">
-            <input type="text" name="days" id="days" placeholder="Days" class="border border-gray-400 w-16 rounded p-2 mr-1">
-            <button class="get-weather border bg-green-500 text-white rounded px-4 py-2">Get Weather!</button>
-            </form>
-        </div>
-      </div> 
-      <div class="current mt-8">
-      </div>
-      <div class="forecast space-y-4">     
-      </div>
-    </div>
-  
+ 
 <h4 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8 text-blue-800">User Login</h4>
     <div>
       
@@ -54,7 +39,7 @@
 
   </div>
 
-  <div class="sign-in-or-sign-out"></div>
+  <div class="text-center sign-in-or-sign-out"></div>
  
   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -77,6 +62,23 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
+
+<h3 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8 text-blue-800">Tryna hoop in the next week? Get the weather first!</h3>
+    <div class ="text-center font-bold font-underline text-blue-800">
+            <div class="text-center">
+          <form>
+            <input type="text" name="location" id="location" placeholder="Location" class="border border-gray-400 rounded p-2 mr-1">
+            <input type="text" name="days" id="days" placeholder="Days" class="border border-gray-400 w-16 rounded p-2 mr-1">
+            <button class="get-weather border bg-green-500 text-white rounded px-4 py-2">Get Weather!</button>
+            </form>
+        </div>
+      </div> 
+      <div class="current mt-8">
+      </div>
+      <div class="forecast space-y-4">     
+      </div>
+    </div>
+
   <script src="index.js"></script>
   <script src="weather.js"></script>
   <script src="scoreboard2.js"></script>
