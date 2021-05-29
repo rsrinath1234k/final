@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         // This will modify the inner contents of that current div
         currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-xl">Current Weather for ${locationData.name}, ${locationData.region}</div>
+            <div class="font-bold text-m">Current Weather for ${locationData.name}, ${locationData.region}</div>
             <div class="font-bold">
               <img src="https:${weatherCurrent.condition.icon}" class="inline-block">
               <span class="temperature">${weatherCurrent.feelslike_f}</span>° 
@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         let weatherLoop = weatherForecast.forecastday[i]
         
         // Insert the appropriate HTML which represents what the user entered for # of days
-        forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-8">
+        forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-left space-y-2">
         <div>
           <img src="https:${weatherLoop.day.condition.icon}" class="mx-auto">
           <h1 class="text-m text-bold text-gray-500">${weatherLoop.date}</h1>
