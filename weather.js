@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', async function() {
               and
               <span class="conditions">${weatherCurrent.condition.text}</span>
             </div>
-            <div class="font-bold text-3xl">${dayDetail} Day Forecast</div>
+            <div class="font-bold text-xl">${dayDetail} Day Forecast</div>
           </div>
         `
   
