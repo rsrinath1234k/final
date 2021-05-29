@@ -75,12 +75,12 @@ window.addEventListener('DOMContentLoaded', async function() {
         let weatherLoop = weatherForecast.forecastday[i]
         
         // Insert the appropriate HTML which represents what the user entered for # of days
-        forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-left space-y-2">
+        forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-2">
         <div>
           <img src="https:${weatherLoop.day.condition.icon}" class="mx-auto">
-          <h1 class="text-m text-bold text-gray-500">${weatherLoop.date}</h1>
-          <h2 class="text-m">High ${weatherLoop.day.maxtemp_f}°F – Low ${weatherLoop.day.mintemp_f}°F</h2>
-          <h2 class="text-m">High ${weatherLoop.day.maxtemp_c}°C – Low ${weatherLoop.day.mintemp_c}°C</h2>
+          <h1 class="text-s text-bold text-gray-500">${weatherLoop.date}</h1>
+          <h2 class="text-s">High ${weatherLoop.day.maxtemp_f}°F – Low ${weatherLoop.day.mintemp_f}°F</h2>
+          <h2 class="text-s">High ${weatherLoop.day.maxtemp_c}°C – Low ${weatherLoop.day.mintemp_c}°C</h2>
           <p class="text-gray-500">${weatherLoop.day.condition.text}</h1>
         </div>`)}
   }})})
