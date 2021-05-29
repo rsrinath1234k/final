@@ -2,7 +2,6 @@
 
 // 2) Create MVP stats html page
 // List each players name, pic (from bios page) and stats (from stats page)
-// Pull stats from api for each button pressed
 
 let firebase = require('./firebase')
 
