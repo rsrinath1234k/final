@@ -1,15 +1,6 @@
 window.addEventListener('DOMContentLoaded', async function() {
   
-    // Get a reference to the "get weather" button
-    let weatherButton = document.querySelector(`.get-weather`)
-  
-    // When the "get weather" button is clicked:
-    weatherButton.addEventListener(`click`, async function(event){
-  
-      // - Ignore the default behavior of the button
-      event.preventDefault()
-
-      let url = `https://www.balldontlie.io/api/v1/teams/14`
+       let url = `https://www.balldontlie.io/api/v1/teams/14`
         
         // - Fetch the url, wait for a response, store the response in memory
         let response = await fetch(url)
@@ -32,4 +23,3 @@ window.addEventListener('DOMContentLoaded', async function() {
             <div class="font-bold text-m">${json.full_name}</div>
           </div>`
         })
-    })
