@@ -23,6 +23,15 @@ window.addEventListener('DOMContentLoaded', async function() {
   
       // - Ignore the default behavior of the button
       event.preventDefault()
+
+        // - Get a reference to the element containing the user-entered location and days
+        let name = document.querySelector(`#name`)
+        
+        // - Get the user-entered location and days from the elements' value
+        let nameDetail = location.value
+                
+        // - Check to see if the user entered values in both fields; if so:
+        if (nameDetail.length>0) {
         
         // - Construct a URL to call the WeatherAPI.com API based on the values
         let url = `http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard`
@@ -37,7 +46,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         console.log(json)
         
         // - Store the interpreted location, current weather conditions, the forecast as three separate variables
-        let NBAscores = json
+        let NBA = json
                 
         // Select the 'current' div and insert information related to the location, weather, icon, and days requested for forecast
         let currentHeading = document.querySelector(`.today`)
@@ -45,25 +54,9 @@ window.addEventListener('DOMContentLoaded', async function() {
         // This will modify the inner contents of that current div
         currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">Current score for ${nbascores.name} </div>
+            <div class="font-bold text-m">Current score for ${nba.name} </div>
             <div class="font-bold">
-               <span class="score">${nbascores.name.score}</span>° 
+               <span class="score">${nba.name.score}</span>° 
               and
-          </div>
-        `
-  
-        // Go into a loop that will loop for the number of days which were entered by the user
-        for (let i=0;i<dayDetail;i++){
-        let forecastDetail = document.querySelector(`.forecast`)
-        let weatherLoop = weatherForecast.forecastday[i]
-        
-        // Insert the appropriate HTML which represents what the user entered for # of days
-        forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-2">
-        <div>
-          <img src="https:${weatherLoop.day.condition.icon}" class="mx-auto">
-          <h1 class="text-s text-bold text-gray-500">${weatherLoop.date}</h1>
-          <h2 class="text-s">High ${weatherLoop.day.maxtemp_f}°F – Low ${weatherLoop.day.mintemp_f}°F</h2>
-          <h2 class="text-s">High ${weatherLoop.day.maxtemp_c}°C – Low ${weatherLoop.day.mintemp_c}°C</h2>
-          <p class="text-gray-500">${weatherLoop.day.condition.text}</h1>
-        </div>`)}
-  }})})
+          </div>)}
+  })
