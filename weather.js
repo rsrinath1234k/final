@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         // This will modify the inner contents of that current div
         currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-3xl">Current Weather for ${locationData.name}, ${locationData.region}</div>
+            <div class="font-bold text-xl">Current Weather for ${locationData.name}, ${locationData.region}</div>
             <div class="font-bold">
               <img src="https:${weatherCurrent.condition.icon}" class="inline-block">
               <span class="temperature">${weatherCurrent.feelslike_f}</span>° 
