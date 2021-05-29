@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', async function() {
   
-       let url = `https://www.balldontlie.io/api/v1/teams/`
+       let url = `https://www.balldontlie.io/api/v1/teams/14`
         
         // - Fetch the url, wait for a response, store the response in memory
         let response = await fetch(url)
@@ -20,6 +20,6 @@ window.addEventListener('DOMContentLoaded', async function() {
           // This will modify the inner contents of that current div
           currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">${json.14.full_name}</div>
+            <div class="font-bold text-m">${json.full_name}</div>
           </div>`
         })
