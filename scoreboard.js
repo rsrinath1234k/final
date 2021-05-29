@@ -37,22 +37,18 @@ window.addEventListener('DOMContentLoaded', async function() {
         console.log(json)
         
         // - Store the interpreted location, current weather conditions, the forecast as three separate variables
-        let nbascores = json.name
+        let NBAscores = json
                 
         // Select the 'current' div and insert information related to the location, weather, icon, and days requested for forecast
-        let currentHeading = document.querySelector(`.current`)
+        let currentHeading = document.querySelector(`.today`)
         
         // This will modify the inner contents of that current div
         currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">Current Weather for ${locationData.name}, ${locationData.region}</div>
+            <div class="font-bold text-m">Current score for ${nbascores.name} </div>
             <div class="font-bold">
-              <img src="https:${weatherCurrent.condition.icon}" class="inline-block">
-              <span class="temperature">${weatherCurrent.feelslike_f}</span>° 
+               <span class="score">${nbascores.name.score}</span>° 
               and
-              <span class="conditions">${weatherCurrent.condition.text}</span>
-            </div>
-            <div class="font-bold text-m">${dayDetail} Day Forecast</div>
           </div>
         `
   
