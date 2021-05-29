@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', async function() {
               and
               <span class="conditions">${weatherCurrent.condition.text}</span>
             </div>
-            <div class="font-bold text-xl">${dayDetail} Day Forecast</div>
+            <div class="font-bold text-m">${dayDetail} Day Forecast</div>
           </div>
         `
   
@@ -78,9 +78,9 @@ window.addEventListener('DOMContentLoaded', async function() {
         forecastDetail.insertAdjacentHTML(`beforeend`,`<div class="text-center space-y-8">
         <div>
           <img src="https:${weatherLoop.day.condition.icon}" class="mx-auto">
-          <h1 class="text-2xl text-bold text-gray-500">${weatherLoop.date}</h1>
-          <h2 class="text-xl">High ${weatherLoop.day.maxtemp_f}°F – Low ${weatherLoop.day.mintemp_f}°F</h2>
-          <h2 class="text-xl">High ${weatherLoop.day.maxtemp_c}°C – Low ${weatherLoop.day.mintemp_c}°C</h2>
+          <h1 class="text-m text-bold text-gray-500">${weatherLoop.date}</h1>
+          <h2 class="text-m">High ${weatherLoop.day.maxtemp_f}°F – Low ${weatherLoop.day.mintemp_f}°F</h2>
+          <h2 class="text-m">High ${weatherLoop.day.maxtemp_c}°C – Low ${weatherLoop.day.mintemp_c}°C</h2>
           <p class="text-gray-500">${weatherLoop.day.condition.text}</h1>
         </div>`)}
   }})})
