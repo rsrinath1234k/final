@@ -29,6 +29,6 @@ window.addEventListener('DOMContentLoaded', async function() {
           // This will modify the inner contents of that current div
           currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">${json}</div>
+            <div class="font-bold text-m">${json.full_name}</div>
           </div>)}
   })
