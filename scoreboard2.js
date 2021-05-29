@@ -30,5 +30,6 @@ window.addEventListener('DOMContentLoaded', async function() {
           currentHeading.innerHTML = `
           <div class="text-center space-y-2">
             <div class="font-bold text-m">${json.full_name}</div>
-          </div>)}
-  })
+          </div>`
+        })
+    })
