@@ -7,7 +7,7 @@ let firebase = require(`./firebase`)
 exports.handler = async function(event) {
   // define an empty Array to hold the return value from our lambda
   let returnValue = []
-
+  
   // establish a connection to firebase in memory
   let db = firebase.firestore()
 

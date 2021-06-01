@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting Page</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <!-- bios rendered from JavaScript -->
       </div>
     
-      <script src="votingpage.js"></script>
+     
     </div> 
 
     <h1 class ="text-center font-extrabold uppercase text-2xl m-3 p-3 border-8">Scroll down to cast Your Vote Here!</h1>
@@ -33,7 +34,7 @@
     <div>
         <form class="w-full text-center mt-8">
           <input type="text" id="vote-url" name="vote-url" placeholder="1,2,or 3" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-          <button id="vote-button" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl">Vote!</button>
+          <button id="zebra" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl">Vote!</button>
         </form>
       </div>
 
@@ -42,7 +43,7 @@
       <div class="stats">
         <!-- vote creation rendered from JavaScript -->
       </div>
-      
+      <div class="sign-in-or-sign-out"></div>
       <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
@@ -59,17 +60,19 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-    apiKey: "AIzaSyA6VXUtrvB96BEZmJiyr9IlX-fKLNDZx_Q",
-    authDomain: "kiei-451-17cd5.firebaseapp.com",
-    projectId: "kiei-451-17cd5",
-    storageBucket: "kiei-451-17cd5.appspot.com",
-    messagingSenderId: "3344532057",
-    appId: "1:3344532057:web:18a419a32ba7313f182748"
+    apiKey: "AIzaSyCzxRwKdrNDr6m2J94AL4HavnZQI9SdIuE",
+    authDomain: "kiei-final-project-8da54.firebaseapp.com",
+    projectId: "kiei-final-project-8da54",
+    storageBucket: "kiei-final-project-8da54.appspot.com",
+    messagingSenderId: "874218534068",
+    appId: "1:874218534068:web:929d6b83ab39ea84ce53e1",
+    measurementId: "G-KBK6GDYJXM"
   } // replace
     
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-
+     <script src="votingpage.js"></script>
       <script src="votingpage1.js"></script>
+      
     </div> 

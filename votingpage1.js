@@ -6,24 +6,24 @@ firebase.auth().onAuthStateChanged(async function(user) {
       console.log(user)
   
       // Build the markup for the sign-out button and set the HTML in the header
-      document.querySelector(`.sign-in-or-sign-out`).innerHTML = `
-        <button class="text-pink-500 underline sign-out">Sign Out</button>
-      `
-   // get a reference to the sign out button
-   let signOutButton = document.querySelector(`.sign-out`)
+//       document.querySelector(`.sign-in-or-sign-out`).innerHTML = `
+//         <button class="text-pink-500 underline sign-out">Sign Out</button>
+//       `
+//    // get a reference to the sign out button
+//    let signOutButton = document.querySelector(`.sign-out`)
   
-   // handle the sign out button click
-   signOutButton.addEventListener(`click`, function(event) {
-     // sign out of firebase authentication
-     firebase.auth().signOut()
+//    // handle the sign out button click
+//    signOutButton.addEventListener(`click`, function(event) {
+//      // sign out of firebase authentication
+//      firebase.auth().signOut()
   
-     // redirect to the voting page
-     document.location.href = `Voting Page.html`
-    })
+//      // redirect to the voting page
+//      document.location.href = `Voting Page.html`
+//     })
   
     // get a reference to the "Vote" button
-    let postButton = document.querySelector(`#vote-button`)
-  
+    let postButton = document.querySelector(`#zebra`)
+    console.log(postButton)
     // handle the clicking of the "Vote" button
     postButton.addEventListener(`click`, async function(event) {
       // prevent the default behavior (submitting the form)
@@ -48,19 +48,19 @@ firebase.auth().onAuthStateChanged(async function(user) {
       // Signed out
       console.log('signed out')
   
-      // Initializes FirebaseUI Auth
-      let ui = new firebaseui.auth.AuthUI(firebase.auth())
+    //   // Initializes FirebaseUI Auth
+    //   let ui = new firebaseui.auth.AuthUI(firebase.auth())
   
-      // FirebaseUI configuration
-      let authUIConfig = {
-        signInOptions: [
-          firebase.auth.EmailAuthProvider.PROVIDER_ID
-        ],
-        signInSuccessUrl: 'Voting Page.html' // where to go after we're done signing up/in
-      }
+    //   // FirebaseUI configuration
+    //   let authUIConfig = {
+    //     signInOptions: [
+    //       firebase.auth.EmailAuthProvider.PROVIDER_ID
+    //     ],
+    //     signInSuccessUrl: 'Voting Page.html' // where to go after we're done signing up/in
+    //   }
   
-      // Starts FirebaseUI Auth
-      ui.start('.sign-in-or-sign-out', authUIConfig)
+    //   // Starts FirebaseUI Auth
+    //   ui.start('.sign-in-or-sign-out', authUIConfig)
     }
   })
   
