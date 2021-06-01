@@ -18,7 +18,7 @@ firebase.auth().onAuthStateChanged(async function(user) {
    firebase.auth().signOut()
 
    // redirect to the voting page
-   document.location.href = `Voting Page.html`
+   document.location.href = `index.html`
   })
 
   // // get a reference to the "Vote" button
