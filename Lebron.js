@@ -20,6 +20,6 @@ window.addEventListener('DOMContentLoaded', async function() {
           // This will modify the inner contents of that current div
           currentHeading.innerHTML = `
           <div class="text-center space-y-2">
-            <div class="font-bold text-m">The current MVP favorite per Vegas odds is ${json.first_name} ${json.last_name}, who plays for the Los Angeles Lakers. Find out more on who should be MVP by logging in below! </div>
+            <div class="font-bold text-m"> ${json.first_name} ${json.last_name} is a ${json.height_feet} foot ${json.height_inches} inch ${json.weight_pounds} lb P${json.position } who currently players for the ${json.team.full_name}. Find out more on him and other MVP candidates by logging in below! </div>
           </div>`
         })

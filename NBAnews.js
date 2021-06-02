@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', async function() {
      // Select the 'current' div and insert information related to the location, weather, icon, and days requested for forecast
      let currentHeading = document.querySelector(`.NBA`)
 
+     console.log(currentHeading)
        // This will modify the inner contents of that current div
        currentHeading.innerHTML = `
        <div class="text-center space-y-2">
