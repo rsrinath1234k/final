@@ -23,3 +23,5 @@ window.addEventListener('DOMContentLoaded', async function() {
             <div class="font-bold text-m"> ${json.first_name} ${json.last_name} is a ${json.height_feet} foot ${json.height_inches} inch ${json.weight_pounds} lb P${json.position } who currently players for the ${json.team.full_name}. Find out more on him and other MVP candidates by logging in below! </div>
           </div>`
         })
+
+        // https://www.balldontlie.io/api/v1/players?page=10?per_page=100?search=ike
