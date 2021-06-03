@@ -1,7 +1,7 @@
 //purpose of this page: this page collects player stats from our firebase collection. 
 
 // allows us to use firebase
-let firebase = require(`./netlify/functions/firebase`)
+let firebase = require(`./firebase`)
 
 // /.netlify/functions/posts
 exports.handler = async function(event) {
@@ -40,9 +40,9 @@ exports.handler = async function(event) {
   }
     // create an Object to be added to the return value of our lambda
     let voteObject = {
-        je: jevotes,
-        sc: scvotes,
-        nj: njvotes,
+      jevotes: jevotes,
+      scvotes: scvotes,
+      njvotes: njvotes,
 
       }
       // add the Object to the return value
