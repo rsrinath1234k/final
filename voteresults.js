@@ -35,8 +35,7 @@ window.addEventListener('DOMContentLoaded', async function() {
                   <ol class ="m-auto text-center" >
                       <li class="m-auto text-left text-white text-2xl">_</li> <!--this is essentially acting as white space-->
                       <li class="m-auto text-left text-red-600 text-2xl">Joel Embiid: ${vote.jevotes}</li>
-                      <li class="m-auto text-left text-red-600 text-2xl">Stephen Curry: ${vote.scvotes}</li>
-                      <li class="m-auto text-left text-red-600 text-2xl">Nikola Jokic: ${vote.njvotes} </li>
+
 
                   </ol>
                   </div>
