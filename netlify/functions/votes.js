@@ -43,7 +43,7 @@ exports.handler = async function(event) {
       jevotes: jevotes,
       scvotes: scvotes,
       njvotes: njvotes,
-
+      
       }
       // add the Object to the return value
       returnValue.push(voteObject)
